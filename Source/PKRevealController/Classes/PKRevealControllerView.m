@@ -52,9 +52,9 @@ static NSString *kShadowTransitionAnimationKey = @"shadowTransitionAnimation";
         UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:self.bounds];
         self.layer.masksToBounds = NO;
         self.layer.shadowColor = [UIColor blackColor].CGColor;
-        self.layer.shadowOffset = CGSizeMake(0.0, 0.0);
-        self.layer.shadowOpacity = 0.5;
-        self.layer.shadowRadius = 2.5;
+        self.layer.shadowOffset = CGSizeMake(-5.0f, 0.0f);
+        self.layer.shadowOpacity = 0.5f;
+        self.layer.shadowRadius = 7.0f;
         self.layer.shadowPath = shadowPath.CGPath;
     }
     else
